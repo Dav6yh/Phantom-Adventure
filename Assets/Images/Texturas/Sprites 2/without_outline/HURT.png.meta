@@ -46,7 +46,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -151,20 +151,20 @@ TextureImporter:
       name: HURT_0
       rect:
         serializedVersion: 2
-        x: 34
-        y: 22
-        width: 24
-        height: 36
+        x: 0
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4083e2270dff09130800000000000000
-      internalID: 3571635775238715396
+      spriteID: 7884838e1e6c64c4a99a50dc4445c314
+      internalID: 313216396
       vertices: []
       indices: 
       edges: []
@@ -173,20 +173,20 @@ TextureImporter:
       name: HURT_1
       rect:
         serializedVersion: 2
-        x: 124
-        y: 22
-        width: 32
-        height: 36
+        x: 95
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 86e90f40b593115a0800000000000000
-      internalID: -6552392919759675800
+      spriteID: a9dc9c385378f084890ce12e0ca36874
+      internalID: 1602224135
       vertices: []
       indices: 
       edges: []
@@ -195,20 +195,20 @@ TextureImporter:
       name: HURT_2
       rect:
         serializedVersion: 2
-        x: 220
-        y: 22
-        width: 32
-        height: 36
+        x: 190
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6a18ca575fea3d5c0800000000000000
-      internalID: -4191814458887339610
+      spriteID: 2b6f9569aa9a90046acfd9770b7ae09b
+      internalID: -500041346
       vertices: []
       indices: 
       edges: []
@@ -217,20 +217,20 @@ TextureImporter:
       name: HURT_3
       rect:
         serializedVersion: 2
-        x: 319
-        y: 22
-        width: 29
-        height: 36
+        x: 285
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bfcfc4aef95a8d0b0800000000000000
-      internalID: -5703626821815436037
+      spriteID: 0ec3b33a08208d747b655aba5c70efc0
+      internalID: -1397102418
       vertices: []
       indices: 
       edges: []
@@ -239,7 +239,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b4757db3c622bf642ad353178628810f
     internalID: 0
     vertices: []
     indices: 
@@ -248,7 +248,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      HURT_0: 313216396
+      HURT_1: 1602224135
+      HURT_2: -500041346
+      HURT_3: -1397102418
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

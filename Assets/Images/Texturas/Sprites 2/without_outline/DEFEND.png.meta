@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -157,20 +157,20 @@ TextureImporter:
       name: DEFEND_0
       rect:
         serializedVersion: 2
-        x: 36
-        y: 22
-        width: 23
-        height: 36
+        x: 0
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 91283038c478c0d40800000000000000
-      internalID: 5551961203326288409
+      spriteID: b91c32d5557c37748abae64e789b802c
+      internalID: 975510181
       vertices: []
       indices: 
       edges: []
@@ -179,20 +179,20 @@ TextureImporter:
       name: DEFEND_1
       rect:
         serializedVersion: 2
-        x: 127
-        y: 22
-        width: 31
-        height: 35
+        x: 95
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e1d2c345826e1dff0800000000000000
-      internalID: -12976263019090658
+      spriteID: 486f71b73e582fa40b9694690828fc82
+      internalID: -1145081953
       vertices: []
       indices: 
       edges: []
@@ -201,20 +201,20 @@ TextureImporter:
       name: DEFEND_2
       rect:
         serializedVersion: 2
-        x: 221
-        y: 22
-        width: 33
-        height: 34
+        x: 190
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a1c00f73795ae4090800000000000000
-      internalID: -8048313415167374310
+      spriteID: ae0c5df03e1b20347919295c9cc88368
+      internalID: -11441765
       vertices: []
       indices: 
       edges: []
@@ -223,20 +223,20 @@ TextureImporter:
       name: DEFEND_3
       rect:
         serializedVersion: 2
-        x: 316
-        y: 22
-        width: 35
-        height: 34
+        x: 285
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6f8f8d86f61b2c330800000000000000
-      internalID: 3729738533474728182
+      spriteID: ecea161c54532e042a33212d71cb1b2a
+      internalID: 990312614
       vertices: []
       indices: 
       edges: []
@@ -245,20 +245,20 @@ TextureImporter:
       name: DEFEND_4
       rect:
         serializedVersion: 2
-        x: 414
-        y: 22
-        width: 34
-        height: 34
+        x: 380
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: bdad6bf6c32cff960800000000000000
-      internalID: 7638037057871731419
+      spriteID: 1a8c2842beb82a44d84ebd7e587d5d7c
+      internalID: 1338716450
       vertices: []
       indices: 
       edges: []
@@ -267,20 +267,20 @@ TextureImporter:
       name: DEFEND_5
       rect:
         serializedVersion: 2
-        x: 512
-        y: 22
-        width: 28
-        height: 35
+        x: 475
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 653fdc5fb327ea330800000000000000
-      internalID: 3724039543734530902
+      spriteID: 38165a35afb4e9d4dbac5ae6051c8291
+      internalID: -860159900
       vertices: []
       indices: 
       edges: []
@@ -289,7 +289,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d9a38454d90d01e4cb65eda7aaca5647
     internalID: 0
     vertices: []
     indices: 
@@ -298,7 +298,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DEFEND_0: 975510181
+      DEFEND_1: -1145081953
+      DEFEND_2: -11441765
+      DEFEND_3: 990312614
+      DEFEND_4: 1338716450
+      DEFEND_5: -860159900
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

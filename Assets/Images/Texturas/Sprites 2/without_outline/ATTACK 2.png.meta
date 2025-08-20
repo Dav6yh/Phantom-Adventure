@@ -49,7 +49,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -154,20 +154,20 @@ TextureImporter:
       name: ATTACK 2_0
       rect:
         serializedVersion: 2
-        x: 28
-        y: 22
-        width: 33
-        height: 32
+        x: 0
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: fb87e30921b28b050800000000000000
-      internalID: 5816446277478414527
+      spriteID: e92d3f0ceb27c8c44ad304a1d84b2349
+      internalID: 1395151169
       vertices: []
       indices: 
       edges: []
@@ -176,20 +176,20 @@ TextureImporter:
       name: ATTACK 2_1
       rect:
         serializedVersion: 2
-        x: 120
-        y: 22
-        width: 51
-        height: 34
+        x: 95
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b425023f482ae12a0800000000000000
-      internalID: -6764790898365541813
+      spriteID: 580dae9fcd5315643b564e93204a343e
+      internalID: 2049650752
       vertices: []
       indices: 
       edges: []
@@ -198,20 +198,20 @@ TextureImporter:
       name: ATTACK 2_2
       rect:
         serializedVersion: 2
-        x: 215
-        y: 22
-        width: 44
-        height: 34
+        x: 190
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a38749337a45ef3f0800000000000000
-      internalID: -865161001306916806
+      spriteID: 9efb7f7be9b93ec4099be0044826c35c
+      internalID: -1047777833
       vertices: []
       indices: 
       edges: []
@@ -220,20 +220,20 @@ TextureImporter:
       name: ATTACK 2_3
       rect:
         serializedVersion: 2
-        x: 311
-        y: 22
-        width: 37
-        height: 34
+        x: 285
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 65867c77d886157f0800000000000000
-      internalID: -625603916418553770
+      spriteID: ba81cb5af0cebe04cb1cc65ba9648cd7
+      internalID: -114070282
       vertices: []
       indices: 
       edges: []
@@ -242,20 +242,20 @@ TextureImporter:
       name: ATTACK 2_4
       rect:
         serializedVersion: 2
-        x: 407
-        y: 22
-        width: 37
-        height: 34
+        x: 380
+        y: 0
+        width: 95
+        height: 84
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 57da822f3d0d7d540800000000000000
-      internalID: 5032720717329247605
+      spriteID: fec85501ec6ae6a40946a8c41f4f5288
+      internalID: 442092212
       vertices: []
       indices: 
       edges: []
@@ -264,7 +264,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 9fd2f6648433d2f47a91615dbcdc3302
     internalID: 0
     vertices: []
     indices: 
@@ -273,7 +273,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ATTACK 2_0: 1395151169
+      ATTACK 2_1: 2049650752
+      ATTACK 2_2: -1047777833
+      ATTACK 2_3: -114070282
+      ATTACK 2_4: 442092212
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
