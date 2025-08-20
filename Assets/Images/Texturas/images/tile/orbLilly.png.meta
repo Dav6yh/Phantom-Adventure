@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      orbLilly_0: -8901331746288045627
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

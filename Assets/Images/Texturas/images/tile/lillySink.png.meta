@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      lillySink_0: -4393308347114331246
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -623,7 +623,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Pixel Tank 2_0: -1570572975281977266
+      Pixel Tank 2_1: -6352547809848579143
+      Pixel Tank 2_10: 4411482430032526569
+      Pixel Tank 2_11: -277531127405619169
+      Pixel Tank 2_12: 1773939385103661972
+      Pixel Tank 2_13: -4636422617337621429
+      Pixel Tank 2_14: 1670240916170424978
+      Pixel Tank 2_15: -3423379828054747866
+      Pixel Tank 2_16: 5339443688791503652
+      Pixel Tank 2_17: -7330426705110902955
+      Pixel Tank 2_18: -9222559326035483462
+      Pixel Tank 2_2: -2919031358177819308
+      Pixel Tank 2_3: 1566813291056245710
+      Pixel Tank 2_4: -6105432296147728680
+      Pixel Tank 2_5: -6727844967620073436
+      Pixel Tank 2_6: -6913425536442651356
+      Pixel Tank 2_7: -3261124394339452521
+      Pixel Tank 2_8: 8589513744878212864
+      Pixel Tank 2_9: 6824444706046242239
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

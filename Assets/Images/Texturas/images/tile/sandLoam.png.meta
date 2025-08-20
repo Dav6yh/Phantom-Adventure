@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sandLoam_0: 1862542880017917159
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -173,7 +173,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      turtleRetreat_0: -8867202715323643128
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
