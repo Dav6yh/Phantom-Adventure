@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -373,7 +373,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      BLACKSMITH_0: -1005624978479446606
+      BLACKSMITH_1: 1566904307402070021
+      BLACKSMITH_2: 4278709191899419306
+      BLACKSMITH_3: -3723594856359437016
+      BLACKSMITH_4: -7502798366097647797
+      BLACKSMITH_5: 6778133680399479520
+      BLACKSMITH_6: 2191174510042027221
+      BLACKSMITH_7: 5885357619316290615
+      BLACKSMITH_8: -6507413402349935435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
