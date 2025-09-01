@@ -232,6 +232,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: Pulando
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: NoAr
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6140471861449181067}
   m_Solo: 0
@@ -312,6 +315,12 @@ AnimatorController:
     m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   - m_Name: Pulando
+    m_Type: 4
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 9100000}
+  - m_Name: NoAr
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
@@ -417,6 +426,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: NoChao
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NoAr
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -9024345285907649492}
   m_Solo: 0
@@ -503,6 +515,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: NoChao
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: NoAr
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 559151907339481817}

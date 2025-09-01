@@ -29,9 +29,11 @@ public class PlayerController2D : MonoBehaviour
 
     void FixedUpdate()
     {
-        //Vector2 input = joystick != null ? joystick.InputDirection : new Vector2(Input.GetAxis("Horizontal"), 0);
+        Vector2 input = joystick != null ? joystick.InputDirection : new Vector2(Input.GetAxis("Horizontal"), 0);
 
         //rb.linearVelocity = input * moveSpeed;
+
+        transform.position += new Vector3(input.x * moveSpeed * Time.deltaTime, 0, 0) ;
     }
 
     public void Pular()
@@ -42,9 +44,18 @@ public class PlayerController2D : MonoBehaviour
             //rb.linearVelocity *= forcaPulo;
             animator.SetBool("NoChao", false);
             animator.SetTrigger("Pular");
+            animator.SetBool("Pulando", true);
+            animator.SetBool("NoAr", true);
             noPiso = false;
         }
-            
+        else if (noPiso == false)
+        {
+            animator.SetBool("Pulando", false);
+            animator.SetBool("NoAr", false);
+
+        }
+      
+
     }
 
     //public void OnJumpButtonPressed()
@@ -62,6 +73,8 @@ public class PlayerController2D : MonoBehaviour
         {
             noPiso = true;
             animator.SetBool("NoChao", true);
+            animator.SetBool("Pulando", false);
+            animator.SetBool("NoAr", false);
         }
         
     }
@@ -71,7 +84,7 @@ public class PlayerController2D : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             noPiso = true;
-            animator.SetBool("NoChao", true);
+            animator.SetBool("NoChao", true); 
         }
     }
 }
