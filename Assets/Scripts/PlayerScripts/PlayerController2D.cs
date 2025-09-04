@@ -8,7 +8,7 @@ public class PlayerController2D : MonoBehaviour
 {
     [Header("Movement Settings")]
     public VirtualJoystick2D joystick;
-    public float moveSpeed = 5f;
+    [SerializeField]private float moveSpeed = 5f;
 
     [Header("Jump Settings")]
     [SerializeField] private float forcaPulo;
@@ -86,5 +86,22 @@ public class PlayerController2D : MonoBehaviour
             noPiso = true;
             animator.SetBool("NoChao", true); 
         }
+    }
+
+    public float GetSpeed()
+    {
+        return moveSpeed += 2;
+    }
+    public float PerderSpeed()
+    {
+        return moveSpeed -= 2;
+    }
+    public float GetJumpForce()
+    {
+        return forcaPulo += 2;
+    }
+    public float PerderJumpForce()
+    {
+        return forcaPulo -= 2;
     }
 }

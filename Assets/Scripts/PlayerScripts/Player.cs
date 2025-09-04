@@ -93,4 +93,14 @@ public class Player : MonoBehaviour
             coracao4.SetActive(false);   
         }
     }
+
+    public int GetVida()
+    {
+        return vida += 1;
+    }
+
+    public int PerderVida()
+    {
+        return vida -= 1;
+    }
 }
