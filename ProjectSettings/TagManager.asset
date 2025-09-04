@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Ground
   - Corte
+  - VelocidadeUp
+  - PuloUp
   layers:
   - Default
   - TransparentFX
