@@ -8,6 +8,10 @@ TagManager:
   - Corte
   - VelocidadeUp
   - PuloUp
+  - VidaUp
+  - Inimigo
+  - Direita
+  - Esquerda
   layers:
   - Default
   - TransparentFX
