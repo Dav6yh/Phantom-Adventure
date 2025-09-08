@@ -7,7 +7,7 @@ public class PlayerAtaque : MonoBehaviour
     [SerializeField] private GameObject ataquePrefab;
     [SerializeField] private Transform mira;
     [SerializeField] private float ataqueCooldown = 1f;
-    [SerializeField] private int dano;
+    [SerializeField] private int dano = 3;
 
     public bool dirPlayer;
     private VirtualJoystick2D joystick;
@@ -26,11 +26,12 @@ public class PlayerAtaque : MonoBehaviour
     }
 
     public void Atacar()
-    {    
+    {
         animator.SetTrigger("Atacar");
         Instantiate(ataquePrefab, mira.position, Quaternion.identity);
 
     }
+
 
     public void Mira()
     {
@@ -54,6 +55,6 @@ public class PlayerAtaque : MonoBehaviour
     }
     public int PerderDano()
     {
-       return dano -= 3;
+       return dano;
     }
 }

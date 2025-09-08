@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.U2D;
@@ -14,6 +15,9 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject coracao2;
     [SerializeField] private GameObject coracao3;
     [SerializeField] private GameObject coracao4;
+
+    //[SerializeField] private GameObject coracaoExtra;
+    //private bool coracaoAparecer = false;
 
     private VirtualJoystick2D joystick;
 
@@ -55,6 +59,8 @@ public class Player : MonoBehaviour
         }
     }
 
+    
+
     private void Vida()
     {
         if (vida == 4)
@@ -90,10 +96,47 @@ public class Player : MonoBehaviour
             coracao1.SetActive(false);
             coracao2.SetActive(false);
             coracao3.SetActive(false);
-            coracao4.SetActive(false);   
+            coracao4.SetActive(false);
+        }
+
+        //VidaExtra();
+    }
+
+    private void TomarDano()
+    { 
+        StartCoroutine(TomarDanoCoroutine());
+    }
+
+    IEnumerator TomarDanoCoroutine()
+    {
+        vida -= 1;
+        animator.SetTrigger("Hit");
+        yield return new WaitForSeconds(0.5f);
+        if (vida <= 0)
+        {
+            Morrer();
+            // Aqui você pode adicionar lógica para reiniciar o nível ou mostrar uma tela de game over
         }
     }
 
+    private void Morrer()
+    {
+        animator.SetTrigger("Morrer");
+    }
+
+    //private void VidaExtra()
+    //{
+    //    if (coracaoAparecer = true)
+    //    {
+    //        coracaoExtra.SetActive(true);
+    //        vida +=1;
+    //    }
+    //    else if (vida >= 4) 
+    //    {
+    //        coracaoExtra.SetActive(false);
+    //        coracaoAparecer = false;
+    //    }
+    //}
     public int GetVida()
     {
         return vida += 1;
@@ -103,4 +146,18 @@ public class Player : MonoBehaviour
     {
         return vida -= 1;
     }
+
+    //public bool GetCoracaoExtra()
+    //{
+    //    return coracaoAparecer;
+    //}
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Inimigo"))
+        {
+            TomarDano();
+        }
+    }
 }
+
