@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject coracao2;
     [SerializeField] private GameObject coracao3;
     [SerializeField] private GameObject coracao4;
+    [SerializeField] private Rigidbody2D rb;
 
     //[SerializeField] private GameObject coracaoExtra;
     //private bool coracaoAparecer = false;
@@ -22,11 +23,14 @@ public class Player : MonoBehaviour
     private VirtualJoystick2D joystick;
 
     private Animator animator;
+
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
         joystick = GameObject.Find("Background").GetComponent<VirtualJoystick2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -103,7 +107,8 @@ public class Player : MonoBehaviour
     }
 
     private void TomarDano()
-    { 
+    {
+        
         StartCoroutine(TomarDanoCoroutine());
     }
 
@@ -156,8 +161,24 @@ public class Player : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Inimigo"))
         {
+            Vector3 direction = -(collision.transform.position - this.transform.position).normalized;
             TomarDano();
+            StartCoroutine(KnockbackCoroutine(direction));
         }
+    }
+
+    private IEnumerator KnockbackCoroutine(Vector3 direction)
+    {
+        float knockbackDuration = 0.2f; // Dura????o do knockback
+        float knockbackForce = 5f; // Força do knockback
+        float timer = 0f;
+        while (timer < knockbackDuration)
+        {
+            rb.linearVelocity = direction * knockbackForce;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        rb.linearVelocity = Vector2.zero; // Para o movimento ap??s o knockback
     }
 }
 

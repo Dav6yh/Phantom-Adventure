@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4433520946397151381}
-  - component: {fileID: 6459557233076932749}
+  - component: {fileID: 9058452937871914572}
   m_Layer: 0
   m_Name: Direita
   m_TagString: Direita
@@ -32,7 +32,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2189182535090800352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &6459557233076932749
+--- !u!61 &9058452937871914572
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -66,7 +66,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.6963819}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -76,7 +76,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2.3927639}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
 --- !u!1 &6148899373779429254
 GameObject:
@@ -290,7 +290,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 63954990342783450}
-  - component: {fileID: 2681235822290512283}
+  - component: {fileID: 2386455071206691339}
   m_Layer: 0
   m_Name: Esquerda
   m_TagString: Esquerda
@@ -313,7 +313,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2189182535090800352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &2681235822290512283
+--- !u!61 &2386455071206691339
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -347,7 +347,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: -0.6963819}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -357,5 +357,5 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 2.3927639}
+  m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
