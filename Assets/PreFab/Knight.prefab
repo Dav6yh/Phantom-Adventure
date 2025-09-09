@@ -16,6 +16,8 @@ GameObject:
   - component: {fileID: 1065765093647942869}
   - component: {fileID: 4484540718117121962}
   - component: {fileID: 4066362753197893525}
+  - component: {fileID: -1286148383037323560}
+  - component: {fileID: 3789240200841357084}
   m_Layer: 0
   m_Name: Knight
   m_TagString: Player
@@ -182,7 +184,11 @@ MonoBehaviour:
   vida: 4
   dano: 0
   moveH: 0
-  stelf: 3
+  coracao1: {fileID: 0}
+  coracao2: {fileID: 0}
+  coracao3: {fileID: 0}
+  coracao4: {fileID: 0}
+  rb: {fileID: 0}
 --- !u!114 &1065765093647942869
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -239,6 +245,40 @@ MonoBehaviour:
   ataqueCooldown: 1
   dano: 0
   dirPlayer: 0
+--- !u!114 &-1286148383037323560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5600050764269960938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 232ef66dd37c9b14b8a81953e02a076a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5280877717528230169}
+  playerController2D: {fileID: 1065765093647942869}
+  playerAtaque: {fileID: 4066362753197893525}
+  duracaoEfeito: 0
+  efeitoAtivo: 0
+--- !u!114 &3789240200841357084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5600050764269960938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eeb5cfda5190094581048d96539ccaf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 5280877717528230169}
+  playerController2D: {fileID: 1065765093647942869}
+  playerAtaque: {fileID: 4066362753197893525}
+  duracaoEfeito: 0
+  efeitoAtivo: 0
 --- !u!1 &8362459885767099873
 GameObject:
   m_ObjectHideFlags: 0
