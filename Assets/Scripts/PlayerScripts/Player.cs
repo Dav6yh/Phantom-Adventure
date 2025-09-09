@@ -152,6 +152,10 @@ public class Player : MonoBehaviour
         return vida -= 1;
     }
 
+    public void GetDano()
+    {
+        TomarDano();
+    }
     //public bool GetCoracaoExtra()
     //{
     //    return coracaoAparecer;
@@ -169,8 +173,9 @@ public class Player : MonoBehaviour
 
     private IEnumerator KnockbackCoroutine(Vector3 direction)
     {
+        yield return new WaitForSeconds(0.1f); // Pequeno atraso antes do knockback
         float knockbackDuration = 0.2f; // Dura????o do knockback
-        float knockbackForce = 5f; // Força do knockback
+        float knockbackForce = 7f; // Força do knockback
         float timer = 0f;
         while (timer < knockbackDuration)
         {

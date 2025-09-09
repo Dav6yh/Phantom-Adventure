@@ -6,6 +6,7 @@ public class Inimigo_Boar : MonoBehaviour
 {
     [SerializeField] private int vida = 6;
     [SerializeField] private PlayerAtaque playerDano;
+    [SerializeField] private Rigidbody2D rb;
 
     private int dir = 1;
     [SerializeField] private float speed;
@@ -17,6 +18,7 @@ public class Inimigo_Boar : MonoBehaviour
     private void Awake()
     {
         playerDano = FindAnyObjectByType<PlayerAtaque>().GetComponent<PlayerAtaque>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     void Start()
@@ -71,6 +73,8 @@ public class Inimigo_Boar : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Corte"))
         {
+            Vector3 direction = -(collision.transform.position - this.transform.position).normalized;
+            StartCoroutine(KnockbackCoroutine(direction));
             vida -= playerDano.GetDano();
             animator.SetTrigger("TomarDano");
             if (vida <= 0)
@@ -80,6 +84,20 @@ public class Inimigo_Boar : MonoBehaviour
         }
     }
 
+    private IEnumerator KnockbackCoroutine(Vector3 direction)
+    {
+        yield return new WaitForSeconds(0.1f); // Pequeno atraso antes do knockback
+        float knockbackDuration = 0.2f; // Dura????o do knockback
+        float knockbackForce = 10f; // Força do knockback
+        float timer = 0f;
+        while (timer < knockbackDuration)
+        {
+            rb.linearVelocity = direction * knockbackForce;
+            timer += Time.deltaTime;
+            yield return null;
+        }
+        rb.linearVelocity = Vector2.zero; // Para o movimento ap??s o knockback
+    }
     IEnumerator Morrer()
     {
         animator.SetTrigger("Morrer");
