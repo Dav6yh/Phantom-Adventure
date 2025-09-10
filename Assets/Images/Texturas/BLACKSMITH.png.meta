@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -166,10 +166,10 @@ TextureImporter:
       name: BLACKSMITH_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 16
-        width: 37
-        height: 28
+        x: 0
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -188,10 +188,10 @@ TextureImporter:
       name: BLACKSMITH_1
       rect:
         serializedVersion: 2
-        x: 36
-        y: 16
-        width: 39
-        height: 57
+        x: 95
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,10 +210,10 @@ TextureImporter:
       name: BLACKSMITH_2
       rect:
         serializedVersion: 2
-        x: 104
-        y: 16
-        width: 37
-        height: 28
+        x: 190
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -232,10 +232,10 @@ TextureImporter:
       name: BLACKSMITH_3
       rect:
         serializedVersion: 2
-        x: 134
-        y: 16
-        width: 36
-        height: 59
+        x: 285
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -254,10 +254,10 @@ TextureImporter:
       name: BLACKSMITH_4
       rect:
         serializedVersion: 2
-        x: 200
-        y: 16
-        width: 69
-        height: 56
+        x: 380
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,10 +276,10 @@ TextureImporter:
       name: BLACKSMITH_5
       rect:
         serializedVersion: 2
-        x: 296
-        y: 16
-        width: 69
-        height: 56
+        x: 475
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -298,10 +298,10 @@ TextureImporter:
       name: BLACKSMITH_6
       rect:
         serializedVersion: 2
-        x: 392
-        y: 16
-        width: 69
-        height: 56
+        x: 570
+        y: 0
+        width: 95
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,55 +316,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: BLACKSMITH_7
-      rect:
-        serializedVersion: 2
-        x: 488
-        y: 16
-        width: 69
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7347c73a29dfca150800000000000000
-      internalID: 5885357619316290615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BLACKSMITH_8
-      rect:
-        serializedVersion: 2
-        x: 584
-        y: 16
-        width: 69
-        height: 56
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5b4e0520df501b5a0800000000000000
-      internalID: -6507413402349935435
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 0312af8947ded2546b854c6bfe0a3642
     internalID: 0
     vertices: []
     indices: 
@@ -381,8 +337,6 @@ TextureImporter:
       BLACKSMITH_4: -7502798366097647797
       BLACKSMITH_5: 6778133680399479520
       BLACKSMITH_6: 2191174510042027221
-      BLACKSMITH_7: 5885357619316290615
-      BLACKSMITH_8: -6507413402349935435
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
