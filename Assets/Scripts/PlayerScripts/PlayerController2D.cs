@@ -12,7 +12,7 @@ public class PlayerController2D : MonoBehaviour
 
     [Header("Jump Settings")]
     [SerializeField] private float forcaPulo;
-    [SerializeField] private bool noPiso = true;
+    [SerializeField] private bool noPiso;
     [Header("Components")]
     private Rigidbody2D rb;
     private Animator animator;

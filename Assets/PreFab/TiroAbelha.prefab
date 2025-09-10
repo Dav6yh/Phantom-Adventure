@@ -10,9 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 8734448434445402959}
   - component: {fileID: 5185088905660471606}
+  - component: {fileID: 2932430822029834080}
+  - component: {fileID: 6043140857690103920}
+  - component: {fileID: 7364631214514203355}
   m_Layer: 0
   m_Name: TiroAbelha
-  m_TagString: Untagged
+  m_TagString: TiroInimigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -87,3 +90,126 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2932430822029834080
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060523504035752274}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &6043140857690103920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060523504035752274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c9af92df638ca1c43bc964aca6f310c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifeTime: 1
+  damage: 1
+  player: {fileID: 5280877717528230169, guid: 3bfe591c6b1b9eb4ab13c9c9e9719b55, type: 3}
+--- !u!60 &7364631214514203355
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1060523504035752274}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.5, y: 0.47}
+    newSize: {x: 0.5, y: 0.47}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.12710693, y: -0.000581488}
+      - {x: -0.13379326, y: -0.012406409}
+      - {x: -0.10848588, y: -0.012302473}
+      - {x: -0.10621014, y: -0.023325786}
+      - {x: -0.15693331, y: -0.0472793}
+      - {x: -0.14327854, y: 0.005465001}
+      - {x: -0.21496618, y: -0.012116566}
+      - {x: -0.121658504, y: -0.035558313}
+      - {x: -0.2195178, y: 0.0025348067}
+      - {x: -0.15807123, y: 0.005465016}
+      - {x: -0.15124388, y: -0.056069866}
+      - {x: -0.11133817, y: -0.028062314}
+      - {x: -0.14758907, y: 0.008395195}
+    - - {x: 0.12, y: 0.235}
+      - {x: -0.25, y: 0.024999999}
+      - {x: -0.25, y: -0.024999999}
+      - {x: 0.14, y: -0.235}
+      - {x: 0.25, y: -0.235}
+      - {x: 0.1726229, y: -0.0673953}
+      - {x: 0.24798119, y: -0.017648488}
+      - {x: 0.16469632, y: 0.062274273}
+      - {x: 0.25, y: 0.235}
+    - - {x: -0.01, y: 0.005}
+      - {x: -0.01, y: -0.005}
+      - {x: 0.049999997, y: 0.035}
+      - {x: 0.049999997, y: 0.024999999}
+      - {x: 0.07, y: 0.005}
+      - {x: 0.049999997, y: -0.024999999}
+      - {x: 0.06, y: -0.035}
+      - {x: 0.06, y: -0.024999999}
+    - - {x: -0.17562194, y: 0.02486065}
+      - {x: -0.11645119, y: 0.032814026}
+      - {x: -0.17148492, y: 0.026953638}
+      - {x: -0.1896914, y: 0.00020948052}
+  m_UseDelaunayMesh: 0

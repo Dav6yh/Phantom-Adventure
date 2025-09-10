@@ -5,14 +5,14 @@ using UnityEngine.Audio;
 
 public class Tiro_Bee : MonoBehaviour
 {
-    public float lifeTime = 3f;   // Tempo até desaparecer
+    public float lifeTime = 1f;   // Tempo até desaparecer
     public int damage = 1;        // Dano no player
 
     [SerializeField] private Player player;
 
-    private void Awake()
+    void Awake()
     {
-        player = FindAnyObjectByType<Player>().GetComponent<Player>();
+        player = FindAnyObjectByType<Player>();
     }
     void Start()
     {
@@ -21,18 +21,15 @@ public class Tiro_Bee : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            // Aqui você pode chamar o script de vida do player
-            player.GetDano();
 
-            Destroy(gameObject); // Some ao colidir
-        }
+    }
 
-        if (collision.CompareTag("Ground")) // Se bater no chão
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground") || collision.gameObject.CompareTag("Player"))  // Se bater no chão
         {
             Destroy(gameObject);
         }
     }
-
 }
+

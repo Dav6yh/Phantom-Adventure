@@ -1,5 +1,4 @@
 using System.Collections;
-using UnityEditor.Rendering;
 using UnityEngine;
 
 public class Inimigo_Boar : MonoBehaviour
@@ -100,9 +99,8 @@ public class Inimigo_Boar : MonoBehaviour
     }
     IEnumerator Morrer()
     {
-        animator.SetTrigger("Morrer");
         //audioSource.TocarSom(somMorte);
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(0.5f);
         Destroy(this.gameObject);
     }
 }
