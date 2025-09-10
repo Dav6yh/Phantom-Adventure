@@ -12,6 +12,7 @@ TagManager:
   - Inimigo
   - Direita
   - Esquerda
+  - TiroInimigo
   layers:
   - Default
   - TransparentFX

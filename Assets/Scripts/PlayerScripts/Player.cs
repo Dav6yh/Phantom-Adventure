@@ -63,7 +63,7 @@ public class Player : MonoBehaviour
         }
     }
 
-    
+
 
     private void Vida()
     {
@@ -108,7 +108,7 @@ public class Player : MonoBehaviour
 
     private void TomarDano()
     {
-        
+
         StartCoroutine(TomarDanoCoroutine());
     }
 
@@ -127,6 +127,10 @@ public class Player : MonoBehaviour
     private void Morrer()
     {
         animator.SetTrigger("Morrer");
+        //Vibrar
+        Handheld.Vibrate();
+        // Desabilitar o controle do jogador
+        this.enabled = false;
     }
 
     //private void VidaExtra()
@@ -161,9 +165,13 @@ public class Player : MonoBehaviour
     //    return coracaoAparecer;
     //}
 
+    public float GetMoveH()
+    {
+        return moveH;
+    }
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Inimigo"))
+        if (collision.gameObject.CompareTag("Inimigo") || collision.gameObject.CompareTag("TiroInimigo"))
         {
             Vector3 direction = -(collision.transform.position - this.transform.position).normalized;
             TomarDano();
