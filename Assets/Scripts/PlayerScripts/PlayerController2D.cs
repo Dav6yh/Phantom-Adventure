@@ -13,6 +13,7 @@ public class PlayerController2D : MonoBehaviour
     [Header("Jump Settings")]
     [SerializeField] private float forcaPulo;
     [SerializeField] private bool noPiso;
+    [SerializeField] private bool pulando;
     [Header("Components")]
     private Rigidbody2D rb;
     private Animator animator;
@@ -38,7 +39,7 @@ public class PlayerController2D : MonoBehaviour
 
     public void Pular()
     {
-        if(noPiso == true)
+        if(noPiso == true && pulando == false)
         {
             rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
             //rb.linearVelocity *= forcaPulo;
@@ -47,12 +48,13 @@ public class PlayerController2D : MonoBehaviour
             animator.SetBool("Pulando", true);
             animator.SetBool("NoAr", true);
             noPiso = false;
+            pulando = true;
         }
-        else if (noPiso == false)
+        else if (noPiso == false && pulando == true)
         {
             animator.SetBool("Pulando", false);
             animator.SetBool("NoAr", false);
-
+            pulando = false;
         }
       
 
@@ -84,6 +86,7 @@ public class PlayerController2D : MonoBehaviour
         if (collision.collider.CompareTag("Ground"))
         {
             noPiso = true;
+            pulando = false;
             animator.SetBool("NoChao", true); 
         }
     }

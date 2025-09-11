@@ -9,6 +9,8 @@ public class EfeitoPulo : MonoBehaviour
 
     [SerializeField] private float duracaoEfeito;
     [SerializeField] private bool efeitoAtivo = false;
+    [SerializeField] private GameObject iformativo;
+    [SerializeField] private string textoInfo;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -58,6 +60,11 @@ public class EfeitoPulo : MonoBehaviour
             playerController2D.PerderJumpForce();
         }
     }
+
+    //private void iformativo()
+    //{
+
+    //}
 }
 
 

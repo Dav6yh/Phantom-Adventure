@@ -329,7 +329,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   joystick: {fileID: 0}
   moveSpeed: 5
-  forcaPulo: 10
+  forcaPulo: 3
   noPiso: 0
   jumpButton: {fileID: 0}
 --- !u!95 &4484540718117121962
