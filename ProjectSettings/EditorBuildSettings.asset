@@ -6,17 +6,20 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 8c9cfa26abfee488c85f1582747f6a02
-  - enabled: 1
-    path: Assets/Scenes/HudTest.unity
-    guid: b669c190476520846ae45ea676d4068e
-  - enabled: 1
-    path: Assets/Scenes/Knithg.unity
-    guid: 7246e8c215a015443bddd02fc439f5de
-  - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: 038b3dff4290af244b7df8475085082b
+  - enabled: 1
+    path: Assets/Scenes/Fases/Vilarejo.unity
+    guid: 3db64b1a240c1a447b3088bf6cd6b065
+  - enabled: 0
+    path: Assets/Scenes/Knithg.unity
+    guid: 7246e8c215a015443bddd02fc439f5de
+  - enabled: 0
+    path: Assets/Scenes/HudTest.unity
+    guid: b669c190476520846ae45ea676d4068e
+  - enabled: 0
+    path: Assets/Scenes/SampleScene.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects:
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 6d60282a91ace0b4ab34bb451015f283, type: 2}
     com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: e3f7eae9da30635499a6a4cc302ca783, type: 2}
