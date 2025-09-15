@@ -154,10 +154,10 @@ RectTransform:
   - {fileID: 386266595}
   m_Father: {fileID: 186908352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -576, y: 16}
-  m_SizeDelta: {x: 362.39, y: 148.1612}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 378, y: 393}
+  m_SizeDelta: {x: 245.8175, y: 136.504}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &54996898
 MonoBehaviour:
@@ -313,10 +313,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -405,10 +405,10 @@ RectTransform:
   - {fileID: 908307725}
   m_Father: {fileID: 186908352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -576, y: -196}
-  m_SizeDelta: {x: 399.5655, y: 153.3708}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 378, y: 219}
+  m_SizeDelta: {x: 245.82, y: 132.9707}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &245164660
 MonoBehaviour:
@@ -681,10 +681,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 50
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
@@ -765,10 +765,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 186908352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -512, y: 336}
-  m_SizeDelta: {x: 909.1699, y: 319.468}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 453, y: -189}
+  m_SizeDelta: {x: 837.3113, y: 319.468}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &682076427
 MonoBehaviour:
@@ -790,7 +790,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Phantom \n\tAdventure"
+  m_text: "Phantom \nAdventure"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3c4fbbdf0bec55843b317071c39237cd, type: 2}
   m_sharedMaterial: {fileID: 7754291707057227324, guid: 3c4fbbdf0bec55843b317071c39237cd, type: 2}
@@ -817,14 +817,14 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 130
-  m_fontSizeBase: 130
+  m_fontSize: 129
+  m_fontSizeBase: 129
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
-  m_HorizontalAlignment: 1
+  m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
@@ -953,10 +953,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 45
+  m_fontSize: 60
+  m_fontSizeBase: 60
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
@@ -1442,10 +1442,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 45
+  m_fontSize: 65
+  m_fontSizeBase: 65
   m_fontWeight: 400
-  m_enableAutoSizing: 1
+  m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 2
@@ -1529,10 +1529,10 @@ RectTransform:
   - {fileID: 2076130205}
   m_Father: {fileID: 186908352}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -576.85, y: -367}
-  m_SizeDelta: {x: 364.09, y: 139.7551}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1636, y: 219}
+  m_SizeDelta: {x: 241.6888, y: 110.612}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2131648698
 MonoBehaviour:
