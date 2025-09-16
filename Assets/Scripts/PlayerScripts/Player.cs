@@ -23,14 +23,15 @@ public class Player : MonoBehaviour
     private VirtualJoystick2D joystick;
 
     private Animator animator;
-
+    private SpriteRenderer spriteRenderer;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         animator = GetComponent<Animator>();
-        joystick = GameObject.Find("Background").GetComponent<VirtualJoystick2D>();
+        joystick = FindAnyObjectByType<VirtualJoystick2D>();
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -47,13 +48,13 @@ public class Player : MonoBehaviour
         {
             animator.SetBool("Andando", true);
             animator.SetTrigger("Andar");
-            GetComponent<SpriteRenderer>().flipX = false;
+            spriteRenderer.flipX = false;
         }
         else if (joystick.RetornaX() < 0)
         {
             animator.SetBool("Andando", true);
             animator.SetTrigger("Parar");
-            GetComponent<SpriteRenderer>().flipX = true;
+            spriteRenderer.flipX = true;
 
         }
         else

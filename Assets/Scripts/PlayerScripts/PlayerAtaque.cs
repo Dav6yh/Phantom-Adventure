@@ -16,7 +16,7 @@ public class PlayerAtaque : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
-        joystick = GameObject.Find("Background").GetComponent<VirtualJoystick2D>();
+        joystick = FindAnyObjectByType<VirtualJoystick2D>();
     }
 
     // Update is called once per frame
