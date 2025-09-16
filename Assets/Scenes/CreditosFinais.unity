@@ -805,8 +805,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0.540683}
   m_AnchorMax: {x: 1, y: 0.540683}
-  m_AnchoredPosition: {x: -652.4118, y: -12.0648}
-  m_SizeDelta: {x: 952.3235, y: 494.9863}
+  m_AnchoredPosition: {x: -723, y: 0.000011444092}
+  m_SizeDelta: {x: 1016.1028, y: 494.9863}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746453173
 MonoBehaviour:
@@ -830,7 +830,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: "\t\tCr\xE9ditos\r\nPrograma\xE7\xE3o \t\t Davyh\r\nAnima\xE7\xE3o\t\t\t
     Davyh\r\nMapa\t\t\t\t Luiz\r\nSonoplatia\t\t\t Luiz\r\nM\xFAsica \t\tDSTechnician,
-    inono777\r\nDesigner"
+    inono777, PixaBay\r\nDesigner\t\tMattz Art, Szadi art, itch.io"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 291251f1d58370c48ae1ec52499cf0ac, type: 2}
   m_sharedMaterial: {fileID: -2767318929881206511, guid: 291251f1d58370c48ae1ec52499cf0ac, type: 2}
@@ -857,8 +857,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 55
-  m_fontSizeBase: 55
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
