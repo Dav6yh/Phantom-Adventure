@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] private GameObject coracao4;
     [SerializeField] private Rigidbody2D rb;
 
+    [SerializeField] private GameObject vitoriaTela;
+    [SerializeField] private GameObject derrotaTela;
     //[SerializeField] private GameObject coracaoExtra;
     //private bool coracaoAparecer = false;
 
@@ -131,9 +133,16 @@ public class Player : MonoBehaviour
         //Vibrar
         Handheld.Vibrate();
         // Desabilitar o controle do jogador
-        this.enabled = false;
+        derrotaTela.SetActive(true);
+        StartCoroutine(DesabilitarControle());
+
     }
 
+    IEnumerator DesabilitarControle()
+    {
+        yield return new WaitForSeconds(1f); // Espera 1 segundo antes de desabilitar o controle
+        this.enabled = false; // Desabilita o script de controle do jogador
+    }
     //private void VidaExtra()
     //{
     //    if (coracaoAparecer = true)
@@ -193,6 +202,21 @@ public class Player : MonoBehaviour
             yield return null;
         }
         rb.linearVelocity = Vector2.zero; // Para o movimento ap??s o knockback
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Vitoria"))
+        {
+            vitoriaTela.SetActive(true);
+            this.enabled = true;
+        }
+
+        if (collision.gameObject.CompareTag("Limbo"))
+        {
+            vida = 0;
+            Morrer();
+        }
     }
 }
 
