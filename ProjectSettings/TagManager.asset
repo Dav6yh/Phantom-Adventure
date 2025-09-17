@@ -13,6 +13,8 @@ TagManager:
   - Direita
   - Esquerda
   - TiroInimigo
+  - Vitoria
+  - Limbo
   layers:
   - Default
   - TransparentFX
