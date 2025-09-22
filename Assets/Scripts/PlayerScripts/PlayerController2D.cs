@@ -42,19 +42,21 @@ public class PlayerController2D : MonoBehaviour
         if(noPiso == true && pulando == false)
         {
             rb.AddForce(Vector2.up * forcaPulo, ForceMode2D.Impulse);
+            noPiso = false;
+            pulando = true;
             //rb.linearVelocity *= forcaPulo;
             animator.SetBool("NoChao", false);
             animator.SetTrigger("Pular");
             animator.SetBool("Pulando", true);
             animator.SetBool("NoAr", true);
-            noPiso = false;
-            pulando = true;
+
         }
         else if (noPiso == false && pulando == true)
         {
+            pulando = false;
             animator.SetBool("Pulando", false);
             animator.SetBool("NoAr", false);
-            pulando = false;
+            
         }
       
 
@@ -69,17 +71,7 @@ public class PlayerController2D : MonoBehaviour
     //    }
     //}
 
-    void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (collision.collider.CompareTag("Ground"))
-        {
-            noPiso = true;
-            animator.SetBool("NoChao", true);
-            animator.SetBool("Pulando", false);
-            animator.SetBool("NoAr", false);
-        }
-        
-    }
+
 
     private void OnCollisionStay2D(Collision2D collision)
     {
@@ -87,8 +79,17 @@ public class PlayerController2D : MonoBehaviour
         {
             noPiso = true;
             pulando = false;
-            animator.SetBool("NoChao", true); 
+            animator.SetBool("NoChao", true);
+            animator.SetBool("Pulando", false);
+            animator.SetBool("NoAr", false);
         }
+
+        if (!collision.collider.CompareTag("Ground"))
+        {
+            noPiso = false;
+            pulando = true;
+           
+        }    
     }
 
     public float GetSpeed()

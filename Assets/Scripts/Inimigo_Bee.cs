@@ -31,6 +31,7 @@ public class FlyingEnemy : MonoBehaviour
 
     [SerializeField] private VirtualJoystick2D playerJoy;
 
+    
     void Awake()
     {
         playerJoy = FindAnyObjectByType<VirtualJoystick2D>();
