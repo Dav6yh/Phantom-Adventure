@@ -39,4 +39,9 @@ public class Menu : MonoBehaviour
     {
         SceneManager.LoadScene("CreditosFinal");
     }
+
+    public void GoToRank()
+    {
+        SceneManager.LoadScene("Rank");
+    }
 }
